@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo"
+        android:textColor="#00BCD4"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_puntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Puntaje"
+        android:textSize="18sp"
+        android:textColor="#00BCD4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_titulo" />
+
+    <TextView
+        android:id="@+id/id_nivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Level"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_titulo" />
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="646dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_titulo">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/id_image2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:onClick="clik"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/pensando2" />
+
+            <ImageButton
+                android:id="@+id/id_image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="false"
+                android:onClick="clik"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/pensando2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/id_image3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:onClick="clik"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/pensando2" />
+
+            <ImageButton
+                android:id="@+id/id_image4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:onClick="clik"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/pensando2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textColor="#00BCD4"
+        app:layout_constraintStart_toEndOf="@+id/id_puntos"
+        app:layout_constraintTop_toBottomOf="@+id/id_titulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
